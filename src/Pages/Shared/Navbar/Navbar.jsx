@@ -21,12 +21,15 @@ const Navbar = () => {
   <li><Link to="/myToys">My Toys</Link></li>
   <li><Link to="/allToys">All Toys</Link></li>
   <li><Link to="/addToys">Add A Toy</Link></li>
-  <li><Link to="/blog">Blogs</Link></li>
+  {/* <li><Link to="/blog">Blogs</Link></li> */}
 
 
    { user ?
-   <li><Link to="/login">Login</Link></li> :
-    <li onClick={handleLogOut}><button>Log out</button></li> 
+   <>
+   <li onClick={handleLogOut}><button>Log out</button></li> 
+   
+   </> :
+   <li><Link to="/login">Login</Link></li> 
    }
    </>
 
@@ -51,9 +54,11 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <div className="navbar-end">
-          <button className="btn btn-outline btn-warning">Appointment</button>
-          </div>
+          {user && <div className="">
+            <div className="w-24 rounded-full">
+              <img  src={user?.photoURL} />
+            </div>
+            </div>}
        </div>
   );
 };
