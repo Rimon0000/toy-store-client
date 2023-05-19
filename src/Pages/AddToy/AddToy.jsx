@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Swal from 'sweetalert2'
+import { AuthContext } from '../../Providers/AuthProvider';
 
 
 const AddToy = () => {
+    const {user} = useContext(AuthContext)
 
     const handleAddToy = (event) =>{
         event.preventDefault()
@@ -64,13 +66,13 @@ const AddToy = () => {
                   <label className="label">
                     <span className="label-text">Seller Name</span>
                   </label>
-                  <input type="text" name="seller" placeholder="Seller Name" className="input input-bordered" />
+                  <input type="text" name="seller" defaultValue={user?.displayName} className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Email</span>
                   </label>
-                  <input type="text" name="email" placeholder="email" className="input input-bordered" />
+                  <input type="text" name="email" defaultValue={user?.email} className="input input-bordered" />
                 </div>
 
                 <div className="form-control">
