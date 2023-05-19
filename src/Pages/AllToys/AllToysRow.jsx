@@ -13,7 +13,7 @@ const AllToysRow = ({allToy}) => {
         <td>${price}</td>
         <td>{quantity}</td>
         <th>
-        <Link to={`/updateToy/${_id}`}> <button className="btn">Details</button></Link>
+        <Link to={`/allToys/${_id}`}> <button className="btn">Details</button></Link>
         </th>
       </tr>
     );
