@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MyToysRow = ({myToy, handleDelete}) => {
     const {_id, name, photo, seller, email, subcategory, price, rating, quantity, description} = myToy
@@ -24,8 +25,7 @@ const MyToysRow = ({myToy, handleDelete}) => {
                <td>{rating}</td>
                <td>{quantity}</td>
                <th>
-                 { status === 'confirm' ? <span className="font-bold text-primary">Confirmed!</span> :
-                  <button onClick={() => handleBookingConfirm(_id)} className="btn btn-ghost btn-xs">Please Confirm</button>}
+               <Link to={`/updateToy/${_id}`}> <button className="btn">Edit</button></Link>
                </th>
              </tr>
     );
