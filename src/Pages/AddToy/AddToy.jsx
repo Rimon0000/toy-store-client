@@ -52,9 +52,9 @@ const AddToy = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text">Toy Name</span>
                   </label>
-                  <input type="text" name="name" placeholder="Name" className="input input-bordered" />
+                  <input type="text" name="name" placeholder="Toy Name" className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
