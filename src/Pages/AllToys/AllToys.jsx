@@ -3,14 +3,36 @@ import AllToysRow from './AllToysRow';
 
 const AllToys = () => {
     const [allToys, setAllToys] = useState([])
+    const [searchQuery, setSearchQuery] = useState('');
 
     useEffect( () =>{
-        fetch('http://localhost:5000/allToy')
+        fetch('https://toy-server-theta.vercel.app/allToy')
         .then(res => res.json())
         .then(data => setAllToys(data))
     }, [])
+ 
+  
+    //search
+    const handleSearch = () => {
+      const results = allToys.filter(toy => toy.name.toLowerCase().includes(searchQuery.toLowerCase()));
+      setAllToys(results);
+    };
 
     return (
+      <>
+      <div className='flex gap-2'>
+         <div className="form-control w-1/2">
+         <input value={searchQuery}
+         onChange={event => setSearchQuery(event.target.value)} type="text" placeholder="Search" className="input input-bordered" />
+         </div>
+         <div>
+         <button className='btn btn-primary' onClick={handleSearch}>Search</button>
+         </div>
+         <div>
+          {allToys.length > 0 ? "" : <p>No results found.</p>}
+         </div>
+      </div>
+
         <div>
             <h2 className='text-5xl text-center m-5 pb-4'>All Toys</h2>
             <div className="overflow-x-auto w-full">
@@ -37,6 +59,7 @@ const AllToys = () => {
              </table>
             </div>
         </div>
+        </>
     );
 };
 

@@ -8,7 +8,7 @@ const Category = () => {
   const [tabValue, setTabValue] = useState("marvel")
   
   useEffect(() =>{
-    fetch(`http://localhost:5000/allToys/${tabValue}`)
+    fetch(`https://toy-server-theta.vercel.app/allToys/${tabValue}`)
     .then(res => res.json())
     .then(data => setAllToy(data))
   },[tabValue])

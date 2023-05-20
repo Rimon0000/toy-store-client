@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         {
           path:"/updateToy/:id",
           element: <UpdateToy></UpdateToy>,
-          loader: ({params}) => fetch(`http://localhost:5000/addToy/${params.id}`)
+          loader: ({params}) => fetch(`https://toy-server-theta.vercel.app/addToy/${params.id}`)
 
         },
         {
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
         {
           path:"/allToys/:id",
           element: <ToyDetails></ToyDetails>,
-          loader: ({params}) => fetch(`http://localhost:5000/addToy/${params.id}`)
+          loader: ({params}) => fetch(`https://toy-server-theta.vercel.app/addToy/${params.id}`)
         }
       ]
     },

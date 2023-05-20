@@ -6,7 +6,7 @@ const MyToys = () => {
     const {user} = useContext(AuthContext)
     const [myToys, setMyToys] = useState([])
 
-    const url = `http://localhost:5000/addToy?email=${user?.email}`
+    const url = `https://toy-server-theta.vercel.app/addToy?email=${user?.email}`
     useEffect(() =>{
         fetch(url)
         .then(res => res.json())
@@ -16,7 +16,7 @@ const MyToys = () => {
     const handleDelete = (id) =>{
         const proceed = confirm("Are you sure you want to Delete?")
         if(proceed){
-          fetch(`http://localhost:5000/addToy/${id}`,{
+          fetch(`https://toy-server-theta.vercel.app/addToy/${id}`,{
             method: 'DELETE'
           })
           .then(res => res.json())

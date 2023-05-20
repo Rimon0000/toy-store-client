@@ -23,7 +23,7 @@ const AddToy = () => {
         console.log(newToy)
 
         //send data to the server 
-        fetch('http://localhost:5000/addToy',{
+        fetch('https://toy-server-theta.vercel.app/addToy',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'
