@@ -74,12 +74,11 @@ const AddToy = () => {
                   </label>
                   <input type="text" name="email" defaultValue={user?.email} className="input input-bordered" />
                 </div>
-
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Sub Category</span>
                   </label>
-                  <input type="text" name="subcategory" placeholder='Sub Category' className="input input-bordered" />
+                  <input type="text" name="subcategory" placeholder='Sub Category: all are small letters' className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">

@@ -18,10 +18,9 @@ const Navbar = () => {
 
   const navItems = <>
   <li><Link to="/">Home</Link></li>
-  {/* <li><Link to="/myToys">My Toys</Link></li> */}
   <li><Link to="/allToys">All Toys</Link></li>
   <li><Link to="/addToy">Add A Toy</Link></li>
-  {/* <li><Link to="/blog">Blogs</Link></li> */}
+  <li><Link to="/blog">Blogs</Link></li>
 
 
    { user ?
@@ -55,8 +54,8 @@ const Navbar = () => {
             </ul>
           </div>
           {user && <div className="">
-            <div className="w-24 rounded-full">
-              <img  src={user?.photoURL} />
+            <div className="w-12 rounded-full">
+              <img className='rounded-full' src={user?.photoURL} data-toggle="tooltip" data-placement="top" title={user?.displayName}/>
             </div>
             </div>}
        </div>

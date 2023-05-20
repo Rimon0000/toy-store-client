@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import signUp from "../../assets/login/registration.jpg"
 import { AuthContext } from '../../Providers/AuthProvider';
+import { updateProfile } from 'firebase/auth';
 
 
 
@@ -24,15 +25,34 @@ const Registration = () => {
         .then(result => {
             const loggedUser = result.user
             console.log(loggedUser)
-            setSuccess('User Login successful.')
+            setSuccess('User Sign Up successful.')
             setError(' ')
             form.reset()
+
+            form.reset()
+            updateUser(result.user, name, photo)
+            console.log(result.user)
         })
         .catch(error =>{
             console.log(error)
             setError(error.message)
 
         })
+    }
+
+     //update profile
+     const updateUser = (user, name, photo) =>{
+      updateProfile(user, {
+        displayName: name,
+        photoURL: photo
+      })
+      .then(() =>{
+        console.log("User name updated")
+      })
+      .catch(error =>{
+        console.log(error)
+      })
+
     }
 
 

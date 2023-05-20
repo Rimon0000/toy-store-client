@@ -12,17 +12,11 @@ const UpdateToy = () => {
     const handleUpdateToy = (event) =>{
         event.preventDefault()
         const form = event.target 
-        const name = form.name.value
-        const photo = form.photo.value
-        const seller = form.seller.value
-        const email = form.email.value
-        const subcategory = form.subcategory.value
         const price = form.price.value
-        const rating = form.rating.value
         const quantity = form.quantity.value
         const description = form.description.value
 
-        const updateToy = {name, photo, seller, email, subcategory, price, rating, quantity, description}
+        const updateToy = {price, quantity, description}
         console.log(updateToy)
 
         //send data to the server
@@ -54,46 +48,9 @@ const UpdateToy = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
-                  </label>
-                  <input type="text" name="name" defaultValue={name} className="input input-bordered" />
-                </div>
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Photo URL</span>
-                  </label>
-                  <input type="text" name="photo" defaultValue={photo} className="input input-bordered" />
-                </div>
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Seller Name</span>
-                  </label>
-                  <input type="text" name="seller" defaultValue={seller} className="input input-bordered" />
-                </div>
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Email</span>
-                  </label>
-                  <input type="text" name="email" defaultValue={user?.email} className="input input-bordered" />
-                </div>
-
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Sub Category</span>
-                  </label>
-                  <input type="text" name="subcategory" defaultValue={subcategory} className="input input-bordered" />
-                </div>
-                <div className="form-control">
-                  <label className="label">
                     <span className="label-text">Price</span>
                   </label>
                   <input type="text" name="price" defaultValue={price} className="input input-bordered" />
-                </div>
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Rating</span>
-                  </label>
-                  <input type="text" name="rating" defaultValue={rating} className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">

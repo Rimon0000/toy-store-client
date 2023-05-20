@@ -1,13 +1,19 @@
 import React, { useContext, useState } from 'react';
 import login from "../../assets/login/login.jpg"
 import signUp from "../../assets/login/registration.jpg"
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 
 const Login = () => {
     const [success, setSuccess] = useState('')
     const [error, setError] = useState('')
     const {login,googleLogin} = useContext(AuthContext)
+
+    const navigate = useNavigate();
+    const location = useLocation()
+    // console.log(location)
+    let from = location.state?.from?.pathname || "/";
+    console.log(from)
 
     const handleLogin = (event) =>{
         event.preventDefault()
@@ -33,6 +39,8 @@ const Login = () => {
             setSuccess('User Login successful.')
             setError(' ')
             form.reset()
+            navigate(from, { replace: true })
+
         })
         .catch(error =>{
             console.log(error)
@@ -47,7 +55,7 @@ const Login = () => {
           console.log(loggedUser)
           setSuccess('User Login successful.')
           setError(' ')
-        //   navigate(from, { replace: true })
+          navigate(from, { replace: true })
     
         })
         .catch(error =>{
