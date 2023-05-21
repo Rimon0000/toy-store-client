@@ -11,7 +11,6 @@ const Login = () => {
 
     const navigate = useNavigate();
     const location = useLocation()
-    // console.log(location)
     let from = location.state?.from?.pathname || "/";
     console.log(from)
 

@@ -21,7 +21,7 @@ const AllToys = () => {
     return (
       <>
       <div className='flex gap-2'>
-         <div className="form-control w-1/2">
+         <div className="form-control w-1/4">
          <input value={searchQuery}
          onChange={event => setSearchQuery(event.target.value)} type="text" placeholder="Search" className="input input-bordered" />
          </div>
@@ -34,7 +34,7 @@ const AllToys = () => {
       </div>
 
         <div>
-            <h2 className='text-5xl text-center m-5 pb-4'>All Toys</h2>
+            <h2 className='text-5xl text-center m-5 pb-4'>Explore All Toys</h2>
             <div className="overflow-x-auto w-full">
              <table className="table w-full">
                {/* head */}

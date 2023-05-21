@@ -33,7 +33,14 @@ const MyToys = () => {
 
     return (
         <div>
-            <h2 className='text-5xl'>Your Toys: {myToys.length}</h2>
+            <h2 className='text-5xl text-center  mb-5 font-semibold'>Your Toys: {myToys.length}</h2>
+            <div className='text-end my-10'>
+                  <select>
+                    <option value="" className='bg-slate-300 px-8 py-2'>Filter By Price</option>
+                    <option value="Remote">Ascending</option>
+                    <option  value="Onsite">Descending</option>
+                  </select>
+              </div>
             <div className="overflow-x-auto w-full">
              <table className="table w-full">
                {/* head */}

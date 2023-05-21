@@ -43,9 +43,9 @@ const UpdateToy = () => {
 
     return (
         <div>
-            <h2 className="text-center font-semibold text-4xl m-5 pb-4">Update Toy</h2>
+            <h2 className="text-center font-bold text-4xl m-5">Update Toy</h2>
               <form onSubmit={handleUpdateToy}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className=" w-1/2 mx-auto">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Price</span>
@@ -65,8 +65,8 @@ const UpdateToy = () => {
                   <input type="text" name="description" defaultValue={description} className="input input-bordered" />
                 </div>
                 </div>
-                <div className="form-control mt-6">
-                  <input className="btn btn-block" type="submit" value="Update Toy" />
+                <div className="form-control m-5">
+                  <input className="btn w-1/2 mx-auto" type="submit" value="Update Toy" />
                 </div>
               </form>
         </div>
