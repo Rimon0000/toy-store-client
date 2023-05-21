@@ -3,11 +3,13 @@ import login from "../../assets/login/login.jpg"
 import signUp from "../../assets/login/registration.jpg"
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 const Login = () => {
     const [success, setSuccess] = useState('')
     const [error, setError] = useState('')
     const {login,googleLogin} = useContext(AuthContext)
+    useTitle('Login')
 
     const navigate = useNavigate();
     const location = useLocation()

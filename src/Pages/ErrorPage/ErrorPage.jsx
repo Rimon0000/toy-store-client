@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, useRouteError } from 'react-router-dom'
 import errorImage from "../../assets/error/6342464.jpg"
+import useTitle from '../../hooks/useTitle';
 
 
 const ErrorPage = () => {
   const { error, status } = useRouteError()
+  useTitle('Error')
   return (
     <div>
       <section>

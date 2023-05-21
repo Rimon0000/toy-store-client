@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import signUp from "../../assets/login/registration.jpg"
 import { AuthContext } from '../../Providers/AuthProvider';
 import { updateProfile } from 'firebase/auth';
+import useTitle from '../../hooks/useTitle';
 
 
 
@@ -11,6 +12,7 @@ const Registration = () => {
     const [error, setError] = useState('')
     const [success, setSuccess] = useState('')
     const {createUser} = useContext(AuthContext)
+    useTitle('SignUp')
 
     const handleSignUp = (event) =>{
         event.preventDefault()

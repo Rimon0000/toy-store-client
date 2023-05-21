@@ -1,17 +1,26 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
 import MyToysRow from './MyToysRow';
+import useTitle from '../../hooks/useTitle';
 
 const MyToys = () => {
     const {user} = useContext(AuthContext)
     const [myToys, setMyToys] = useState([])
+    const [sortOrder, setSortOrder] = useState('');
+    useTitle('MyToys')
 
-    const url = `https://toy-server-theta.vercel.app/addToy?email=${user?.email}`
+    const url = `https://toy-server-theta.vercel.app/addToy?email=${user?.email}&sort=${sortOrder}`
     useEffect(() =>{
         fetch(url)
         .then(res => res.json())
         .then(data => setMyToys(data))
-    },[])
+    },[setSortOrder])
+
+    //handle sorting
+  const handleSortChange = (e) => {
+    setSortOrder(e.target.value);
+    console.log(e.target.value)
+  };
 
     const handleDelete = (id) =>{
         const proceed = confirm("Are you sure you want to Delete?")
@@ -35,10 +44,10 @@ const MyToys = () => {
         <div>
             <h2 className='text-5xl text-center  mb-5 font-semibold'>Your Toys: {myToys.length}</h2>
             <div className='text-end my-10'>
-                  <select>
-                    <option value="" className='bg-slate-300 px-8 py-2'>Filter By Price</option>
-                    <option value="Remote">Ascending</option>
-                    <option  value="Onsite">Descending</option>
+              <h2 className='text-1xl font-semibold'>Sort by price:</h2>
+                  <select value={sortOrder} onChange={handleSortChange}>
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
                   </select>
               </div>
             <div className="overflow-x-auto w-full">

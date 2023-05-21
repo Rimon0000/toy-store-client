@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import AllToysRow from './AllToysRow';
+import useTitle from '../../hooks/useTitle';
 
 const AllToys = () => {
     const [allToys, setAllToys] = useState([])
     const [searchQuery, setSearchQuery] = useState('');
+    useTitle('AllToys')
 
     useEffect( () =>{
         fetch('https://toy-server-theta.vercel.app/allToy')
