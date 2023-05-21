@@ -9,8 +9,8 @@ const MyToys = () => {
     const [sortOrder, setSortOrder] = useState('');
     useTitle('MyToys')
 
-=
-    const url = `http://localhost:5000/addToy?email=${user?.email}&sort=${sortOrder}`
+
+    const url = `https://toy-server-theta.vercel.app/addToy?email=${user?.email}&sort=${sortOrder}`
     useEffect(() =>{
         fetch(url)
         .then(res => res.json())
