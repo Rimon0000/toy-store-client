@@ -9,7 +9,7 @@ const Article = () => {
             <h2 className='text-center text-4xl font-bold pt-5 px-5 pb-2'>Read Our Latest Articles</h2>
             <p className='text-center font-semibold mb-5'>More Articles? <span className='bg-accent'>Visits our Blog</span></p>
             <div className='grid sm:grid-cols-1 md:grid-cols-3'>
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
   <                figure><img src={img1} alt="Shoes" /></figure>
   <                div className="card-body">
                     <h2 className="card-title">Fashion for Kids: How Soon Is Too Soon?</h2>
@@ -20,7 +20,7 @@ const Article = () => {
                     </div>
                      </div>
                    </div>
-                    <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
   <                figure><img src={img3} alt="Shoes" /></figure>
   <                div className="card-body">
                     <h2 className="card-title">I Want a Peanut Butter and Chocolate Chip Sandwich</h2>
@@ -31,7 +31,7 @@ const Article = () => {
                     </div>
                      </div>
                    </div>
-                   <div className="card w-96 bg-base-100 shadow-xl">
+                   <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
   <                figure><img src={img3} alt="Shoes" /></figure>
   <                div className="card-body">
                     <h2 className="card-title">These Impressive Kid Fashion Designers Will Blow You Away</h2>
