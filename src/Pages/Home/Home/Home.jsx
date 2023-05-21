@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import Category from '../Category/Category';
 import Gallery from '../Gallery/Gallery';
 import useTitle from '../../../hooks/useTitle';
+import Article from '../Article/Article';
 
 const Home = () => {
     useTitle('Home')
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <Gallery></Gallery>
             <Category></Category>
+            <Article></Article>
         </div>
     );
 };

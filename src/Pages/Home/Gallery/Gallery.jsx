@@ -36,7 +36,7 @@ const Gallery = () => {
 
   return (
     <div className="mb-5">
-        <h2 className="text-center text-5xl m-5 p-3 font-bold">Our Gallery</h2>
+        <h2 className="text-center text-4xl m-5 p-3 font-bold">Our Gallery</h2>
     <div className="w-full gap-5 columns-3 space-y-5">
       {images.map((image) => (
         <img className="rounded-lg"

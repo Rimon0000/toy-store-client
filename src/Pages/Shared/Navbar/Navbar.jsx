@@ -17,18 +17,18 @@ const Navbar = () => {
 }
 
   const navItems = <>
-  <li><Link to="/">Home</Link></li>
-  <li><Link to="/allToys">All Toys</Link></li>
-  <li><Link to="/addToy">Add A Toy</Link></li>
-  <li><Link to="/blog">Blogs</Link></li>
+  <li className='font-semibold'><Link to="/">Home</Link></li>
+  <li className='font-semibold'><Link to="/allToys">All Toys</Link></li>
+  <li className='font-semibold'><Link to="/addToy">Add A Toy</Link></li>
+  <li className='font-semibold'><Link to="/blog">Blogs</Link></li>
 
 
    { user ?
    <>
-   <li><Link to="/myToys">My Toys</Link> </li> 
-   <li onClick={handleLogOut}><button>Log out</button></li> 
+   <li className='font-semibold'><Link to="/myToys">My Toys</Link> </li> 
+   <li className='font-semibold' onClick={handleLogOut}><button>Log out</button></li> 
    </> :
-   <li><Link to="/login">Login</Link></li> 
+   <li className='font-semibold'><Link to="/login">Login</Link></li> 
    }
    </>
 
