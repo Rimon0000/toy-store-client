@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import UpdateToy from "../Pages/MyToys/UpdateToy";
 import AllToys from "../Pages/AllToys/AllToys";
 import ToyDetails from "../Pages/AllToys/ToyDetails";
+import Blog from "../Pages/Blog/Blog";
 
 const router = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
           path:"/allToys/:id",
           element: <ToyDetails></ToyDetails>,
           loader: ({params}) => fetch(`https://toy-server-theta.vercel.app/addToy/${params.id}`)
+        },
+        {
+          path: "/blog",
+          element:<Blog></Blog>
         }
       ]
     },

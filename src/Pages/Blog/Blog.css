@@ -1,0 +1,10 @@
+.question-container{
+    background-color: rgb(110, 110, 98);
+    border-radius: 8px;
+}
+
+.question{
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px 5px #ffffff;
+    background-color: white;
+}
