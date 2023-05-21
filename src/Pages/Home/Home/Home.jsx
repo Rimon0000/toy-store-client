@@ -4,7 +4,7 @@ import Category from '../Category/Category';
 import Gallery from '../Gallery/Gallery';
 import useTitle from '../../../hooks/useTitle';
 import Article from '../Article/Article';
-import About from '../About/About';
+import WithUs from '../WithUs/WithUs';
 
 const Home = () => {
     useTitle('Home')
@@ -13,8 +13,8 @@ const Home = () => {
             <Banner></Banner>
             <Gallery></Gallery>
             <Category></Category>
+            <WithUs></WithUs>
             <Article></Article>
-            <About></About>
         </div>
     );
 };
