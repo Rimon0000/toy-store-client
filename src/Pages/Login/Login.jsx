@@ -4,6 +4,7 @@ import signUp from "../../assets/login/registration.jpg"
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 import useTitle from '../../hooks/useTitle';
+import { FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
     const [success, setSuccess] = useState('')
@@ -107,7 +108,7 @@ const Login = () => {
               </form>
               <p className="my-4 text-center">New to Hero's Town? <Link className="text-orange-600 font-bold" to="/registration">Sign Up</Link></p>
               <div>
-              <Link><button onClick={handleGoogleLogin} className="btn btn-outline btn-secondary">Google Login</button></Link>
+              <Link><button onClick={handleGoogleLogin} className="btn btn-outline btn-secondary"><FaGoogle className='mr-2 text-black'/> Google Login</button></Link>
             </div>
             </div>
           </div>

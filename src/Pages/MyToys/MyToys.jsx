@@ -9,19 +9,21 @@ const MyToys = () => {
     const [sortOrder, setSortOrder] = useState('');
     useTitle('MyToys')
 
-    const url = `https://toy-server-theta.vercel.app/addToy?email=${user?.email}&sort=${sortOrder}`
+=
+    const url = `http://localhost:5000/addToy?email=${user?.email}&sort=${sortOrder}`
     useEffect(() =>{
         fetch(url)
         .then(res => res.json())
         .then(data => setMyToys(data))
-    },[setSortOrder])
+    },[sortOrder])
 
     //handle sorting
-  const handleSortChange = (e) => {
-    setSortOrder(e.target.value);
-    console.log(e.target.value)
+  const handleSortChange = (event) => {
+    setSortOrder(event.target.value);
+    console.log(event.target.value)
   };
 
+  //handle delete
     const handleDelete = (id) =>{
         const proceed = confirm("Are you sure you want to Delete?")
         if(proceed){
@@ -46,10 +48,11 @@ const MyToys = () => {
             <div className='text-end my-10'>
               <h2 className='text-1xl font-semibold'>Sort by price:</h2>
                   <select value={sortOrder} onChange={handleSortChange}>
-                    <option value="asc">Ascending</option>
-                    <option value="desc">Descending</option>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
                   </select>
               </div>
+
             <div className="overflow-x-auto w-full">
              <table className="table w-full">
                {/* head */}
