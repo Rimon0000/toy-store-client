@@ -12,7 +12,8 @@ const ToyDetails = () => {
           <div className="card-body">
             <h2 className="card-title">Name: {name}</h2>
             <div className='font-semibold'>
-            <p className='py-1'>Sub Category: {subcategory}</p>
+            <p className='py-1'>Seller Name: {seller}</p>
+            <p className='py-1'>Seller Email: {email}</p>
             <p className='py-1'>price: {price}</p>
             <p className='py-1'>Rating: { rating}</p>
             <p className='py-1'>Available Quantity: {quantity}</p>
