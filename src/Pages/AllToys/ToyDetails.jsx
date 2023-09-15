@@ -9,7 +9,7 @@ const ToyDetails = () => {
 
     return (
 
-          <div className="card card-compact mx-auto w-96 bg-base-100 shadow-xl px-5">
+          <div className="card card-compact mx-auto w-96 bg-base-100 shadow-xl">
           <figure><img src={photo} alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">Name: {name}</h2>

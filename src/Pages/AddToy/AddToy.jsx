@@ -55,55 +55,55 @@ const AddToy = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Toy Name</span>
+                    <span className="label-text font-semibold">Toy Name</span>
                   </label>
                   <input type="text" name="name" placeholder="Toy Name" className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Photo URL</span>
+                    <span className="label-text font-semibold">Photo URL</span>
                   </label>
                   <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Seller Name</span>
+                    <span className="label-text font-semibold">Seller Name</span>
                   </label>
                   <input type="text" name="seller" defaultValue={user?.displayName} className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="label-text font-semibold">Email</span>
                   </label>
                   <input type="text" name="email" defaultValue={user?.email} className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Sub Category</span>
+                    <span className="label-text font-semibold">Sub Category</span>
                   </label>
                   <input type="text" name="subcategory" placeholder='Sub Category: all are small letters' className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Price</span>
+                    <span className="label-text font-semibold">Price</span>
                   </label>
                   <input type="text" name="price" placeholder='Price' className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Rating</span>
+                    <span className="label-text font-semibold">Rating</span>
                   </label>
                   <input type="text" name="rating" placeholder='Rating' className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Available Quantity</span>
+                    <span className="label-text font-semibold">Available Quantity</span>
                   </label>
                   <input type="text" name="quantity" placeholder='Available Quantity' className="input input-bordered" />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Detail Description</span>
+                    <span className="label-text font-semibold">Detail Description</span>
                   </label>
                   <input type="text" name="description" placeholder='Detail Description' className="input input-bordered" />
                 </div>

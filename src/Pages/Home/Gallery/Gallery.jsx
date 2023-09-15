@@ -1,4 +1,5 @@
 import React from "react";
+import "./Gallery.css"
 import image1 from "../../../assets/gallery/img1.jpg"
 import image2 from "../../../assets/gallery/img2.jpg"
 import image3 from "../../../assets/gallery/img3.jpg"
@@ -39,7 +40,7 @@ const Gallery = () => {
         <h2 className="text-center text-4xl m-5 p-3 font-bold">Our Gallery</h2>
     <div className="w-full gap-5 columns-3 space-y-5">
       {images.map((image) => (
-        <img className="rounded-lg"
+        <img className="rounded-lg zoomable-image"
           key={image.src}
           src={image.src}
           alt={image.alt}

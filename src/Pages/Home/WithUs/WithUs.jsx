@@ -7,7 +7,7 @@ const WithUs = () => {
         <div>
             <h2 className='text-center text-4xl font-bold m-5 p-5'>Why Choose US?</h2>
             <div className="carousel rounded-box flex justify-between">
-                <div className="carousel-item">
+                <div className="carousel-item" data-aos="fade-right" data-aos-duration="2000">
                     <div className=" w-96 bg-base-100 shadow-xl">
                         <figure className="px-10 pt-10">
                         <div className='text-center mx-auto ml-36'>
@@ -20,7 +20,7 @@ const WithUs = () => {
                         </div>
                     </div>  
                 </div> 
-                <div className="carousel-item">
+                <div className="carousel-item" data-aos="fade-up" data-aos-duration="2000">
                     <div className=" w-96 bg-base-100 shadow-xl">
                         <figure className="px-10 pt-10">
                         <div className='text-center mx-auto ml-36'>
@@ -33,7 +33,7 @@ const WithUs = () => {
                         </div>
                     </div> 
                 </div> 
-                <div className="carousel-item">
+                <div className="carousel-item" data-aos="fade-left" data-aos-duration="2000">
                 <div className=" w-96 bg-base-100 shadow-xl">
                         <figure className="px-10 pt-10">
                         <div className='text-center mx-auto ml-36'>
