@@ -6,6 +6,7 @@ import useTitle from '../../../hooks/useTitle';
 import Article from '../Article/Article';
 import WithUs from '../WithUs/WithUs';
 import NewArrival from '../NewArrival/NewArrival';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
     useTitle('Home')
@@ -16,6 +17,7 @@ const Home = () => {
             <Category></Category>
             <NewArrival></NewArrival>
             <WithUs></WithUs>
+            <Contact></Contact>
             <Article></Article>
         </div>
     );
