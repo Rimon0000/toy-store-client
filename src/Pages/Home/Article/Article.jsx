@@ -21,7 +21,7 @@ const Article = () => {
                      </div>
                    </div>
                     <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-  <                   figure><img src={img3} alt="Shoes" /></figure>
+  <                   figure><img src={img2} alt="Shoes" /></figure>
   <                   div className="card-body">
                        <h2 className="card-title">I Want a Peanut Butter and Chocolate Chip Sandwich</h2>
                        <p>When I was a kid, I used to go home after school and have some good ol’ fashioned alone time. 

@@ -9,17 +9,19 @@ const ToyDetails = () => {
 
     return (
 
-          <div className="card card-compact mx-auto w-96 bg-base-100 shadow-xl">
-          <figure><img src={photo} alt="Shoes" /></figure>
+          <div className='grid lg:grid-cols-2 gap-5 my-10 p-10 bg-base-100 shadow-xl'>
+          <div>
+          <figure><img src={photo} alt="Shoes" className='rounded-lg' /></figure>
+          </div>
           <div className="card-body">
-            <h2 className="card-title">Name: {name}</h2>
-            <div className='font-semibold'>
-            <p className='py-1'>Seller Name: {seller}</p>
-            <p className='py-1'>Seller Email: {email}</p>
-            <p className='py-1'>price: {price}</p>
-            <p className='py-1'>Rating: { rating}</p>
-            <p className='py-1'>Available Quantity: {quantity}</p>
-            <p className='py-1'>Description: {description}</p>
+            <h2 className="card-title text-2xl">Name: {name}</h2>
+            <div className=''>
+            <p className='py-1 font-bold'>Seller Name: <span className='font-semibold'>{seller}</span></p>
+            <p className='py-1 font-bold'>Seller Email: <span className='font-semibold'>{email}</span></p>
+            <p className='py-1 font-bold'>price: <span className='font-semibold'>{price}</span></p>
+            <p className='py-1 font-bold'>Rating: <span className='font-semibold'>{ rating}</span></p>
+            <p className='py-1 font-bold'>Available Quantity: <span className='font-semibold'>{ rating}</span></p>
+            <p className='py-1 font-bold'>Description: <span className='font-semibold'>{description}</span></p>
             </div>
           </div>
           </div>
