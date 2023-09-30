@@ -25,7 +25,7 @@ const Category = () => {
                </TabList>
            
                <TabPanel>
-                 <div className='grid md:grid-cols-3 sm:grid-cols-1'>
+                 <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 mx-10 gap-16'>
                  {
                   allToy.map(toy => <SubCategory 
                     key={toy._id}
@@ -35,7 +35,7 @@ const Category = () => {
                  </div>
                </TabPanel>
                <TabPanel>
-               <div className='grid md:grid-cols-3 sm:grid-cols-1'>
+               <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 mx-10 gap-16'>
                  {
                   allToy.map(toy => <SubCategory 
                     key={toy._id}
@@ -45,7 +45,7 @@ const Category = () => {
                  </div>
                </TabPanel>
                <TabPanel>
-               <div className='grid md:grid-cols-3 sm:grid-cols-1'>
+               <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 mx-10 gap-16'>
                  {
                   allToy.map(toy => <SubCategory 
                     key={toy._id}

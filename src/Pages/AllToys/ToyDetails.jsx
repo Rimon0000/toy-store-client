@@ -9,7 +9,7 @@ const ToyDetails = () => {
 
     return (
 
-          <div className='grid lg:grid-cols-2 gap-5 my-10 p-10 bg-base-100 shadow-xl'>
+        <div className='grid lg:grid-cols-2 gap-5 my-10 p-10 bg-base-100 shadow-xl'>
           <div>
           <figure><img src={photo} alt="Shoes" className='rounded-lg' /></figure>
           </div>
@@ -24,7 +24,7 @@ const ToyDetails = () => {
             <p className='py-1 font-bold'>Description: <span className='font-semibold'>{description}</span></p>
             </div>
           </div>
-          </div>
+        </div>
     );
 };
 

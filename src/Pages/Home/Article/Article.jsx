@@ -8,8 +8,8 @@ const Article = () => {
         <div className='m-5'>
             <h2 className='text-center text-4xl font-bold pt-5 px-5 pb-2'>Read Our Latest Articles</h2>
             <p className='text-center font-semibold mb-5'>More Articles? <span className='bg-accent'>Visits our Blog</span></p>
-            <div className='grid sm:grid-cols-1 md:grid-cols-3'>
-                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+            <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 mx-10 gap-16'>
+                <div className="card w-auto bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
   <                figure><img src={img1} alt="Shoes" /></figure>
   <                div className="card-body">
                     <h2 className="card-title">Fashion for Kids: How Soon Is Too Soon?</h2>
@@ -17,10 +17,11 @@ const Article = () => {
                         that featured nine street style photographs of the three-feet.</p>
                     <div className="card-actions">
                       <p>admin | October 11, 2018</p>
+                      <button className="btn btn-base  mt-5">Read More</button>
                     </div>
                      </div>
                    </div>
-                    <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div className="card w-auto bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
   <                   figure><img src={img2} alt="Shoes" /></figure>
   <                   div className="card-body">
                        <h2 className="card-title">I Want a Peanut Butter and Chocolate Chip Sandwich</h2>
@@ -28,10 +29,11 @@ const Article = () => {
                            I’d call mom, let her know I was safe, and then do kid things.</p>
                        <div className="card-actions">
                          <p>admin | October 11, 2018</p>
+                         <button className="btn btn-base  mt-5">Read More</button>
                        </div>
                       </div>
                    </div>
-                   <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                   <div className="card w-auto bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
   <                figure><img src={img3} alt="Shoes" /></figure>
   <                div className="card-body">
                     <h2 className="card-title">These Impressive Kid Fashion Designers Will Blow You Away</h2>
@@ -39,6 +41,7 @@ const Article = () => {
                         Quietly but confidently, several teens and tweens over</p>
                     <div className="card-actions">
                       <p>admin | October 11, 2018</p>
+                      <button className="btn btn-base  mt-5">Read More</button>               
                     </div>
                      </div>
                    </div>

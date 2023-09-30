@@ -25,7 +25,7 @@ const SubCategory = ({toy}) => {
     }
 
     return (
-        <div className="card card-compact mx-auto w-96 bg-base-100 shadow-xl mt-4">
+        <div className="card card-compact mx-auto w-auto bg-base-100 shadow-xl mt-4">
           <figure><img src={photo} alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">Name: {name}</h2>

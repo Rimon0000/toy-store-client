@@ -33,7 +33,7 @@ const Navbar = () => {
    </>
 
   return (
-    <div className="navbar bg-base-100 h-24 mb-3">
+    <div className="navbar bg-neutral-500 lg:text-white h-24 mb-3">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -43,8 +43,8 @@ const Navbar = () => {
                 {navItems}
               </ul>
             </div>
-            <Link to="/" className="mr-3">
-              <img className='w-15 h-14 rounded-lg' src={logo} alt="" />
+            <Link to="/" className="mr-3 ml-10">
+              <img className='lg:w-15 h-14 rounded-lg' src={logo} alt="" />
             </Link>
             <h3 className='font-bold'>HEROS-TOWN</h3>
           </div>
