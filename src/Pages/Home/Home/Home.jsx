@@ -7,6 +7,7 @@ import Article from '../Article/Article';
 import WithUs from '../WithUs/WithUs';
 import NewArrival from '../NewArrival/NewArrival';
 import Contact from '../Contact/Contact';
+import BestSell from '../BestSell/BestSell';
 
 const Home = () => {
     useTitle('Home')
@@ -16,6 +17,7 @@ const Home = () => {
             <Gallery></Gallery>
             <Category></Category>
             <NewArrival></NewArrival>
+            <BestSell></BestSell>
             <WithUs></WithUs>
             <Contact></Contact>
             <Article></Article>
