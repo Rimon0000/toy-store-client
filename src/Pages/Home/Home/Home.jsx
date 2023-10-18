@@ -8,6 +8,7 @@ import WithUs from '../WithUs/WithUs';
 import NewArrival from '../NewArrival/NewArrival';
 import Contact from '../Contact/Contact';
 import BestSell from '../BestSell/BestSell';
+import About from '../About/About';
 
 const Home = () => {
     useTitle('Home')
@@ -18,6 +19,7 @@ const Home = () => {
             <Category></Category>
             <NewArrival></NewArrival>
             <BestSell></BestSell>
+            <About></About>
             <WithUs></WithUs>
             <Contact></Contact>
             <Article></Article>

@@ -6,13 +6,13 @@ const BestSell = () => {
     const [showSeeAllButton, setShowSeeAllButton] = useState(true);
 
     useEffect(() =>{
-        fetch("http://localhost:5000/bestSell")
+        fetch("https://toy-server-theta.vercel.app/bestSell")
         .then(res => res.json())
         .then(data => setToys(data.slice(0, 3)))
     },[])
 
     const seeAllHandler = () =>{
-            fetch("http://localhost:5000/bestSell")
+            fetch("https://toy-server-theta.vercel.app/bestSell")
             .then(res => res.json())
             .then(data => setToys(data))
             setShowSeeAllButton(false)
