@@ -6,13 +6,13 @@ const BestSell = () => {
     const [showSeeAllButton, setShowSeeAllButton] = useState(true);
 
     useEffect(() =>{
-        fetch("https://toy-server-theta.vercel.app/bestSell")
+        fetch("https://toy-server-rimon0000.vercel.app/bestSell")
         .then(res => res.json())
         .then(data => setToys(data.slice(0, 3)))
     },[])
 
     const seeAllHandler = () =>{
-            fetch("https://toy-server-theta.vercel.app/bestSell")
+            fetch("https://toy-server-rimon0000.vercel.app/bestSell")
             .then(res => res.json())
             .then(data => setToys(data))
             setShowSeeAllButton(false)
@@ -24,7 +24,7 @@ const BestSell = () => {
             <p className='text-center font-semibold mb-10 text-stone-800'>Check out our best selling toys</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 my-5 mx-auto text-center lg:mx-10 mt-5'>
                 {
-                    toys?.map(toy => <Toy key={toy.id} toy ={toy}></Toy>)
+                    toys?.map(toy => <Toy key={toy._id} toy ={toy}></Toy>)
                 }
             </div>
             <div className='text-center border-black'>
