@@ -10,6 +10,7 @@ import Contact from '../Contact/Contact';
 import BestSell from '../BestSell/BestSell';
 import About from '../About/About';
 import ClientReview from '../ClientReview/ClientReview';
+import NewsLetter from '../NewsLetter/NewsLetter';
 
 const Home = () => {
     useTitle('Home')
@@ -25,6 +26,7 @@ const Home = () => {
             <WithUs></WithUs>
             <Contact></Contact>
             <Article></Article>
+            <NewsLetter></NewsLetter>
         </div>
     );
 };
