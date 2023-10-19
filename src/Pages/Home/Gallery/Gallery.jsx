@@ -38,7 +38,7 @@ const Gallery = () => {
   return (
     <div className="mb-5 mx-12">
         <h2 className="text-center text-4xl m-5 p-3 font-bold">Our Gallery</h2>
-        <div className="w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-8 columns-3 space-y-5">
+        <div className="w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-8 columns-3">
           {images.map((image) => (
             <img className="rounded-lg zoomable-image"
               key={image.src}
